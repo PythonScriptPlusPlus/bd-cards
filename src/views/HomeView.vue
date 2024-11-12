@@ -1,18 +1,20 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  д
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+// eslint-disable-next-line
+import JSConfetti from 'js-confetti';
+
+const jsConfetti = new JSConfetti();
+
+jsConfetti.addConfetti({
+  emojis: ['🦄'],
+  emojiSize: 100,
+  confettiNumber: 30,
+});
 
 export default {
   name: 'HomeView',
-  components: {
-    HelloWorld,
-  },
 };
 </script>
